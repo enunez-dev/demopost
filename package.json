@@ -1,0 +1,15 @@
+{
+  "name": "postnotification",
+  "version": "1.0.0",
+  "description": "hacer el post de las notificaciones que le llega",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "edward",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
