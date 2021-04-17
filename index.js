@@ -15,6 +15,17 @@ routes.post('/', (req, res)=>{
     console.log(JSON.stringify(body));
     res.send('ok');
 });
+routes.post('/v1', (req, res)=>{  
+    const { body } = req;
+    console.log(`v1  ${JSON.stringify(body)}`);
+    res.send('ok');
+});
+
+routes.post('/v2', (req, res)=>{  
+    const { body } = req;
+    console.log(`v2  ${JSON.stringify(body)}`);
+    res.send('ok');
+});
 
 app.use(routes);
 
