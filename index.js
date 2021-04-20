@@ -12,18 +12,18 @@ routes.get('/', (req, res)=>{
 
 routes.post('/', (req, res)=>{  
     const { body } = req;
-    console.log(JSON.stringify(body));
+    console.log((body));
     res.send('ok');
 });
 routes.post('/v1', (req, res)=>{  
     const { body } = req;
-    console.log(`v1  ${JSON.stringify(body)}`);
+    console.log(`v1  ${(body)}`);
     res.send('ok');
 });
 
 routes.post('/v2', (req, res)=>{  
     const { body } = req;
-    console.log(`v2  ${JSON.stringify(body)}`);
+    console.log(`v2  ${(body)}`);
     res.send('ok');
 });
 
