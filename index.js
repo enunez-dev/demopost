@@ -17,13 +17,15 @@ routes.post('/', (req, res)=>{
 });
 routes.post('/v1', (req, res)=>{  
     const { body } = req;
-    console.log(`v1  ${(body)}`);
+    console.log('v1-----------------------------------------');
+    console.log((body));
     res.send('ok');
 });
 
 routes.post('/v2', (req, res)=>{  
     const { body } = req;
-    console.log(`v2  ${(body)}`);
+    console.log('v2-----------------------------------------');
+    console.log((body));
     res.send('ok');
 });
 
