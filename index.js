@@ -36,7 +36,7 @@ routes.post('/demo',async (req, res)=>{
     console.log('Body-----------------------------------------');
     console.log(body);
     const pemPrivate = fs.readFileSync('./assets/pemPrivate.txt', 'utf8');
-    const result = await decrypt(pemPrivate, body);
+    const result = await decrypt(pemPrivate, body.msgCallback);
     console.log('Result-----------------------------------------');
     console.log(result)
     res.send('ok');
