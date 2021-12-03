@@ -12,11 +12,11 @@ routes.get('/', (req, res)=>{
     res.json({message:'ok'});
 });
 
-routes.post('/', (req, res)=>{  
-    const { body } = req;
-    //console.log((body));
-    res.send('ok');
-});
+// routes.post('/', (req, res)=>{  
+//     const { body } = req;
+//     //console.log((body));
+//     res.send('ok');
+// });
 routes.post('/v1', (req, res)=>{  
     const { body } = req;
     //console.log('v1-----------------------------------------');
@@ -31,7 +31,8 @@ routes.post('/v2', (req, res)=>{
     res.send('ok');
 });
 
-routes.post('/demo',async (req, res)=>{
+//routes.post('/demo',async (req, res)=>{
+routes.post('/',async (req, res)=>{
     const { body } = req;
     console.log('Body-----------------------------------------');
     console.log(body);
